@@ -29,6 +29,10 @@ public class Program {
 			System.out.println();
 			System.out.print("Comum, usado or importado (c/u/i)? ");
 			char tipo = sc.next().charAt(0);
+			while(tipo != 'c' & tipo != 'u' & tipo != 'i') {
+				System.out.print("Digite um caractere valido");
+				tipo = sc.next().charAt(0);
+			}
 			System.out.print("nome: ");
 			sc.nextLine();
 			String nome = sc.nextLine();
